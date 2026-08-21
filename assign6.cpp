@@ -81,11 +81,11 @@ void rotate(int a[],int size,int n,int d)
 }
 int lcm(int a,int b,int c)
 {
-    int l;
-    for(l=a>b?a>c?a:c:b>c?b:c;l<=a*b*c;l++)
+    int lcm;
+    for(lcm=a>b?a>c?a:c:b>c?b:c;lcm<=a*b*c;lcm++)
     {
-        if(l%a==0&&l%b==0&&l%c==0)
-          return l;
+        if(lcm%a==0&&lcm%b==0&&lcm%c==0)
+          return lcm;
     }
 }
 
